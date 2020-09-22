@@ -1,0 +1,146 @@
+EESchema Schematic File Version 4
+LIBS:ws8212b_disp-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4940 4730 0    50   ~ 0
+VDD
+Wire Wire Line
+	4710 4730 4940 4730
+Text Label 4940 4930 0    50   ~ 0
+DIN1
+Wire Wire Line
+	4710 4830 4940 4830
+Wire Wire Line
+	4790 5130 4790 5210
+Wire Wire Line
+	4710 5130 4790 5130
+$Comp
+L power:GND #PWR0101
+U 1 1 5F64FD69
+P 4790 5210
+F 0 "#PWR0101" H 4790 4960 50  0001 C CNN
+F 1 "GND" H 4795 5037 50  0000 C CNN
+F 2 "" H 4790 5210 50  0001 C CNN
+F 3 "" H 4790 5210 50  0001 C CNN
+	1    4790 5210
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5F64E542
+P 4510 4930
+F 0 "J1" H 4618 5211 50  0000 C CNN
+F 1 "IN" H 4618 5120 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4510 4930 50  0001 C CNN
+F 3 "~" H 4510 4930 50  0001 C CNN
+	1    4510 4930
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 2050 3410 1810 600 
+U 5F97A0BE
+F0 "Sheet5F97A0BD" 50
+F1 "file5F97A0BD.sch" 50
+F2 "VDD" I L 2050 3550 50 
+F3 "DIN" I L 2050 3700 50 
+F4 "GND" I L 2050 3860 50 
+F5 "DOUT" I R 3860 3660 50 
+$EndSheet
+$Sheet
+S 5160 3420 1810 600 
+U 5FA15AE1
+F0 "sheet5FA15AE1" 50
+F1 "file5F97A0BD.sch" 50
+F2 "VDD" I L 5160 3470 50 
+F3 "DIN" I L 5160 3710 50 
+F4 "GND" I L 5160 3870 50 
+F5 "DOUT" I R 6970 3670 50 
+$EndSheet
+Wire Wire Line
+	4770 3660 5050 3660
+Wire Wire Line
+	5050 3660 5050 3710
+Wire Wire Line
+	5050 3710 5160 3710
+Wire Wire Line
+	2050 3550 1860 3550
+Wire Wire Line
+	2050 3700 1860 3700
+Wire Wire Line
+	2050 3860 1860 3860
+$Comp
+L power:GND #PWR0102
+U 1 1 5FA16486
+P 1860 3980
+F 0 "#PWR0102" H 1860 3730 50  0001 C CNN
+F 1 "GND" H 1865 3807 50  0000 C CNN
+F 2 "" H 1860 3980 50  0001 C CNN
+F 3 "" H 1860 3980 50  0001 C CNN
+	1    1860 3980
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1860 3980 1860 3860
+Text Label 1860 3550 0    50   ~ 0
+VDD
+Text Label 4980 3470 0    50   ~ 0
+VDD
+$Comp
+L power:GND #PWR0103
+U 1 1 5FA16D59
+P 5050 4030
+F 0 "#PWR0103" H 5050 3780 50  0001 C CNN
+F 1 "GND" H 5055 3857 50  0000 C CNN
+F 2 "" H 5050 4030 50  0001 C CNN
+F 3 "" H 5050 4030 50  0001 C CNN
+	1    5050 4030
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4030 5050 3870
+Wire Wire Line
+	5050 3870 5160 3870
+Text Label 1860 3700 0    50   ~ 0
+DIN1
+Wire Wire Line
+	4980 3470 5160 3470
+$Comp
+L Device:Jumper JP1
+U 1 1 5F687761
+P 4470 3660
+F 0 "JP1" H 4470 3924 50  0000 C CNN
+F 1 "S/P" H 4470 3833 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4470 3660 50  0001 C CNN
+F 3 "~" H 4470 3660 50  0001 C CNN
+	1    4470 3660
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3860 3660 4170 3660
+Text Label 4840 3660 0    50   ~ 0
+DIN2
+Text Label 4940 4830 0    50   ~ 0
+DIN2
+Wire Wire Line
+	4710 4930 4940 4930
+Wire Wire Line
+	4710 5030 4940 5030
+Text Label 4940 5030 0    50   ~ 0
+DOUT
+Wire Wire Line
+	6970 3670 7070 3670
+Text Label 7070 3670 0    50   ~ 0
+DOUT
+$EndSCHEMATC
